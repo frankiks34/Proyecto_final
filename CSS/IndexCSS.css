@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+
+    background-color: #990000;
+}
+@media (max-width: 480px) {
+    body {
+        background-color: #3333FF;
+    }
+}
+.profile{
+
+    background-color: #990000;
+
+    float: left;
+    width: 70%;
+    height: 300px;
+}
+.numbers{
+
+    background-color: green;
+    float: left;
+    width: 30%;
+    height: 300px;
+}
+.profi{
+
+    background-color: #990000;
+    display: inline-block;
+
+    height: 300px;
+}
+.numbe{
+    display: inline-block;
+    background-color: green;
+    width: 300px;
+    height: 300px;
+}
+.recuperar{
+   clear: both;
+}
