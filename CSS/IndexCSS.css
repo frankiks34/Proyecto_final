@@ -1,45 +1,96 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration:none;
+    list-style: none;
+}
+.body{
+    background-image: url("/Image/fam.jpg");
 }
 
-body {
-
-    background-color: #990000;
+.header__div{
+    width: 98%;
 }
-@media (max-width: 480px) {
-    body {
-        background-color: #3333FF;
-    }
+.header__navigation{
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      box-shadow: 5px 0 10px rgba(0,0,0,.6);
+      width: 98%;
+     padding: 2%;
+    font-weight: bold;
 }
-.profile{
-
-    background-color: #990000;
-
-    float: left;
-    width: 70%;
-    height: 300px;
-}
-.numbers{
-
-    background-color: green;
-    float: left;
+.header__tittle{
+    color:forestgreen;
+    font-size: 25px;
+    padding: 0 15px;
     width: 30%;
-    height: 300px;
 }
-.profi{
 
-    background-color: #990000;
-    display: inline-block;
+.options{
+display: flex;
+list-style: none;
+    margin-right: 30px;
+}
+.options li{
+   border-radius: 3px;
+    margin: 0 5px;
+}
+.options li:hover {
+  background: rgba(0,0,0,.3);
+    transition: .4s;
+}
 
-    height: 300px;
+.active{
+  padding: 7px 13px;
+    text-decoration:none ;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #2d1c95;
+    border-radius: 3px;
+
 }
-.numbe{
-    display: inline-block;
-    background-color: green;
-    width: 300px;
-    height: 300px;
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
-.recuperar{
-   clear: both;
+#check{
+    display: none;
+}
+
+
+
+
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    .options{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    .options li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .active{
+        font-size: 20px;
+    }
+
+    #check:checked~options{
+        left: 0;
+    }
 }
